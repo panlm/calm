@@ -1,0 +1,6 @@
+#!/bin/bash
+
+curl -kX GET -H "Cache-Control: no-cache" -H "Postman-Token: 8d11cae6-5afc-75f1-bdc9-4c023667b746" "https://10.68.69.102:9440/PrismGateway/services/rest/v2.0/tasks/4e3cca63-b58e-44a9-8e23-bff62b534bd9" >> $0.log 2>/dev/null 
+
+echo >> $0.log
+

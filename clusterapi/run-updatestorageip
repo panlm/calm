@@ -1,0 +1,7 @@
+curl -kX PUT -H "Authorization: Basic YWRtaW46bnV0YW5peC80dQ==" -H "Content-Type: application/json" -H "Cache-Control: no-cache" -u admin:nutanix/4u -d '{
+  "name": "abcd",
+  "cluster_external_data_services_ipaddress": "1.1.1.1",
+  "cluster_external_ipaddress": "1.1.1.2"
+}' "https://10.68.69.102:9440/api/nutanix/v2.0/cluster/"
+
+

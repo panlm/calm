@@ -1,0 +1,10 @@
+#!/bin/bash -x
+
+hostname=vm-10
+
+num=`echo $hostname |awk -F'-' '{print $2}'`
+if [[ $num -gt 1 && $num -lt 250 ]]; then
+  ip=10.1.1.$num
+  sed -i 's/^IPADDR.*$/d' /etc/sysconfig/network-scripts/ifcfg-eth0 
+  echo "IPADDR=$ip" >> /etc/sysconfig/network-scripts/ifcfg-eth0
+fi
