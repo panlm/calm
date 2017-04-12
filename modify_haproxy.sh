@@ -7,6 +7,6 @@ cat ~/git/haproxy_wordpress.cfg >>haproxy.cfg
 
 cat /etc/hosts |grep -E 'wordpress[0-9]+' |awk '{print $2,$1}' |sed -e 's/^/    server /' -e 's/$/:80 check/' >>haproxy.cfg
 
-systemctl restart haproxy
+systemctl reload haproxy
 
 #    server wordpress0 10.68.69.45:80 check
