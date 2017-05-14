@@ -1,5 +1,0 @@
-curl -kX GET \
-  https://10.68.69.102:9440/PrismGateway/services/rest/v2.0/images/ \
-  -H 'authorization: Basic YWRtaW46bnV0YW5peC80dQ==' \
-  -H 'cache-control: no-cache' \
-  -H 'postman-token: 8cb987c0-9bd8-2574-296f-ac76e64527bc'
