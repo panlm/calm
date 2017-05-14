@@ -1,0 +1,6 @@
+curl -kX GET \
+  https://10.68.69.102:9440/api/nutanix/v2.0/networks/ \
+  -H 'authorization: Basic YWRtaW46bnV0YW5peC80dQ==' \
+  -H 'cache-control: no-cache' \
+  -H 'postman-token: 4873d99c-f6c1-fb86-1d22-682a369c042a'
+
