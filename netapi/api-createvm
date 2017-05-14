@@ -1,0 +1,61 @@
+curl -kX POST \
+  https://10.68.69.102:9440/PrismGateway/services/rest/v2.0/vms/ \
+  -H 'authorization: Basic YWRtaW46bnV0YW5peC80dQ==' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 71010e84-932f-ec45-4ac8-d28961476f23' \
+  -d '{
+  "name": "namestring",
+  "description": "",
+  "memory_mb": memorystring,
+  "num_cores_per_vcpu": corestring,
+  "num_vcpus": vcpustring,
+  "timezone": "Asia/Shanghai",
+  "vm_disks": [
+    {
+      "disk_address": {
+        "device_bus": "IDE",
+        "device_index": 0
+      },
+      "is_cdrom": true,
+      "is_empty": false,
+      "vm_disk_clone": {
+        "disk_address": {
+          "vmdisk_uuid": "3a90058c-b9bc-4a32-833b-4d5bf789e86d"
+        }}
+
+},
+    {
+      "disk_address": {
+        "device_bus": "IDE",
+        "device_index": 1
+      },
+      "is_cdrom": true,
+      "is_empty": false,
+      "vm_disk_clone": {
+        "disk_address": {
+          "vmdisk_uuid": "05c70673-f0e1-4fc7-a37a-c45b03d7c90d"
+        }}
+},
+    {
+      "disk_address": {
+        "device_bus": "SCSI",
+        "device_index": 0
+      },
+      "is_cdrom": false,
+      "is_empty": true,
+      "vm_disk_create": {
+        "size": diskstring,
+        "storage_container_uuid": "a6ff0a1b-ffc1-4d4c-b71a-e6a0e67e008d"
+      }
+    }
+  ],
+  "vm_nics": [
+    {
+      "adapter_type": "E1000",
+      "network_uuid": "de142a1a-26c7-44d8-8541-e7309ee200cd",
+      "request_ip": false
+    }
+  ]
+}'
+
