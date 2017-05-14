@@ -2,3 +2,5 @@
 
 id=`cat createvm.log |awk -F'"' '{print $4}'`
 sed -i "s/\/........-....-....-....-........\//\/$id\//g" task
+
+

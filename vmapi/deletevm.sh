@@ -1,13 +1,13 @@
 #!/bin/bash
 
 if [ $# -gt 2 ]; then
-  echo "Usage: ./$0 [vmuuid]"
-  exit 9
+    echo "Usage: ./$0 [vmuuid]"
+    exit 9
 fi
 
 case $# in
 0)
-  ./listvm.sh
+    ./listvm.sh
 ;;
 1)
     uuid=$1
@@ -21,6 +21,4 @@ case $# in
     exit
 ;;
 esac
-
-exit
 
