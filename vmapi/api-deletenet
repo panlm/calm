@@ -1,1 +1,0 @@
-curl -kX DELETE -H "Authorization: Basic YWRtaW46bnV0YW5peC80dQ==" -H "Cache-Control: no-cache" -u admin:nutanix/4u "https://10.68.69.102:9440/api/nutanix/v2.0/networks/networkuuid"
