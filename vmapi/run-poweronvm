@@ -1,5 +1,5 @@
 curl -kX POST \
-  https://10.68.69.102:9440/api/nutanix/v2.0/vms/8e5340ee-a002-4e0a-913b-d1bdb4760722/set_power_state/ \
+  https://10.68.69.102:9440/api/nutanix/v2.0/vms/bc8a6a51-ab01-471a-be88-a846dc815907/set_power_state/ \
   -H 'authorization: Basic YWRtaW46bnV0YW5peC80dQ==' \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \

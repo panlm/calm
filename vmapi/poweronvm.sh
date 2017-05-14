@@ -7,7 +7,7 @@ fi
 
 case $# in
 0)
-  ./listvm
+  ./listvm.sh
 ;;
 1)
     uuid=$1

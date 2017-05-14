@@ -1,0 +1,43 @@
+curl -kX POST \
+  https://10.68.69.102:9440/PrismGateway/services/rest/v2.0/vms/ \
+  -H 'authorization: Basic YWRtaW46bnV0YW5peC80dQ==' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: efa181a2-ea6e-82fb-3560-129ba69cafa0' \
+  -d '{
+  "name": "namestring",
+  "description": "",
+  "memory_mb": memorystring,
+  "num_cores_per_vcpu": corestring,
+  "num_vcpus": vcpustring,
+  "timezone": "Asia/Shanghai",
+  "vm_disks": [
+    {
+      "disk_address": {
+        "device_bus": "IDE",
+        "device_index": 0
+      },
+      "is_cdrom": true,
+      "is_empty": true
+    },
+    {
+      "disk_address": {
+        "device_bus": "SCSI"
+      },
+      "is_cdrom": false,
+      "vm_disk_clone": {
+        "disk_address": {
+          "device_bus": "SCSI",
+          "vmdisk_uuid": "imagestring"
+        }
+      }
+    }
+  ],
+  "vm_nics": [
+    {
+      "adapter_type": "E1000",
+      "network_uuid": "de142a1a-26c7-44d8-8541-e7309ee200cd",
+      "request_ip": false
+    }
+  ]
+}'
