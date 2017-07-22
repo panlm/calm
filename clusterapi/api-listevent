@@ -1,0 +1,4 @@
+curl -kX GET \
+  'https://10.132.68.45:9440/api/nutanix/v2.0/events/' \
+  -H 'cache-control: no-cache' \
+  -u 'leiming.pan@nutanix.sh:nutanix/4u'
