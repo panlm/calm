@@ -39,7 +39,7 @@ for i in $* ; do
     chmod a+x $runfile
     
     #save all alert to tmpfile
-    ./$runfile 2>/dev/null |jq -r '.' >$outfile
+    $runfile 2>/dev/null |/usr/local/bin/jq -r '.' >$outfile
     echo $end_time > $timefile
 done
 

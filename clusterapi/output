@@ -1,0 +1,284 @@
+{
+  "metadata": {
+    "grand_total_entities": 4,
+    "total_entities": 4,
+    "page": 1,
+    "count": 1000,
+    "start_index": 1,
+    "end_index": 4
+  },
+  "entities": [
+    {
+      "id": "1500734654090656:5:00051c16-6edc-18f0-0000-000000005179",
+      "alert_type_uuid": "A1127",
+      "check_id": "00051c16-6edc-18f0-0000-000000005179::130048",
+      "resolved": false,
+      "auto_resolved": false,
+      "acknowledged": false,
+      "service_vmid": "00051c16-6edc-18f0-0000-000000005179::5",
+      "node_uuid": "5",
+      "created_time_stamp_in_usecs": 1500734654090656,
+      "last_occurrence_time_stamp_in_usecs": 1500734654090656,
+      "cluster_uuid": "00051c16-6edc-18f0-0000-000000005179",
+      "severity": "kCritical",
+      "impact_types": [
+        "Availability"
+      ],
+      "classifications": [
+        "DR"
+      ],
+      "acknowledged_by_username": "",
+      "message": "Snapshot receive for protection domain {protection_domain_name} from remote site {remote_name} failed. {reason}",
+      "detailed_message": "",
+      "alert_title": "Protection domain {protection_domain_name} retrieval failed",
+      "acknowledged_time_stamp_in_usecs": 0,
+      "resolved_time_stamp_in_usecs": 0,
+      "resolved_by_username": "",
+      "user_defined": false,
+      "affected_entities": [
+        {
+          "entity_type": "remote_site",
+          "entity_type_display_name": null,
+          "entity_name": null,
+          "uuid": "AHV-1",
+          "id": "AHV-1"
+        },
+        {
+          "entity_type": "protection_domain",
+          "entity_type_display_name": null,
+          "entity_name": null,
+          "uuid": "JY-Test-SSR",
+          "id": "JY-Test-SSR"
+        }
+      ],
+      "context_types": [
+        "protection_domain_name",
+        "remote_name",
+        "timestamp_usecs",
+        "reason",
+        "operation_id",
+        "arithmos_id",
+        "ncc_version",
+        "nos_version",
+        "remote_site_uuid"
+      ],
+      "context_values": [
+        "JY-Test-SSR",
+        "AHV-1",
+        "1500734647767906",
+        "Replicate RPC completed with error kInvalidValue. Remote detail: Replicate path request for invalid container AHV-1",
+        "5125341",
+        "JY-Test-SSR",
+        "3.0.4-b0379d15",
+        "5.1.1",
+        "00053aa7-50e7-bda4-0000-0000000044dc"
+      ],
+      "possible_causes": [],
+      "alert_details": null
+    },
+    {
+      "id": "1500733531937283:5:00051c16-6edc-18f0-0000-000000005179",
+      "alert_type_uuid": "A1127",
+      "check_id": "00051c16-6edc-18f0-0000-000000005179::130048",
+      "resolved": false,
+      "auto_resolved": false,
+      "acknowledged": false,
+      "service_vmid": "00051c16-6edc-18f0-0000-000000005179::5",
+      "node_uuid": "5",
+      "created_time_stamp_in_usecs": 1500733531937283,
+      "last_occurrence_time_stamp_in_usecs": 1500733531937283,
+      "cluster_uuid": "00051c16-6edc-18f0-0000-000000005179",
+      "severity": "kCritical",
+      "impact_types": [
+        "Availability"
+      ],
+      "classifications": [
+        "DR"
+      ],
+      "acknowledged_by_username": "",
+      "message": "Snapshot receive for protection domain {protection_domain_name} from remote site {remote_name} failed. {reason}",
+      "detailed_message": "",
+      "alert_title": "Protection domain {protection_domain_name} retrieval failed",
+      "acknowledged_time_stamp_in_usecs": 0,
+      "resolved_time_stamp_in_usecs": 0,
+      "resolved_by_username": "",
+      "user_defined": false,
+      "affected_entities": [
+        {
+          "entity_type": "remote_site",
+          "entity_type_display_name": null,
+          "entity_name": null,
+          "uuid": "AHV-1",
+          "id": "AHV-1"
+        },
+        {
+          "entity_type": "protection_domain",
+          "entity_type_display_name": null,
+          "entity_name": null,
+          "uuid": "fred-async",
+          "id": "fred-async"
+        }
+      ],
+      "context_types": [
+        "protection_domain_name",
+        "remote_name",
+        "timestamp_usecs",
+        "reason",
+        "operation_id",
+        "arithmos_id",
+        "ncc_version",
+        "nos_version",
+        "remote_site_uuid"
+      ],
+      "context_values": [
+        "fred-async",
+        "AHV-1",
+        "1500733525975231",
+        "Replicate RPC completed with error kInvalidValue. Remote detail: Replicate path request for invalid container AHV-1",
+        "5125213",
+        "fred-async",
+        "3.0.4-b0379d15",
+        "5.1.1",
+        "00053aa7-50e7-bda4-0000-0000000044dc"
+      ],
+      "possible_causes": [],
+      "alert_details": null
+    },
+    {
+      "id": "1500732685046608:5:00051c16-6edc-18f0-0000-000000005179",
+      "alert_type_uuid": "A1127",
+      "check_id": "00051c16-6edc-18f0-0000-000000005179::130048",
+      "resolved": false,
+      "auto_resolved": false,
+      "acknowledged": false,
+      "service_vmid": "00051c16-6edc-18f0-0000-000000005179::5",
+      "node_uuid": "5",
+      "created_time_stamp_in_usecs": 1500732685046608,
+      "last_occurrence_time_stamp_in_usecs": 1500732685046608,
+      "cluster_uuid": "00051c16-6edc-18f0-0000-000000005179",
+      "severity": "kCritical",
+      "impact_types": [
+        "Availability"
+      ],
+      "classifications": [
+        "DR"
+      ],
+      "acknowledged_by_username": "",
+      "message": "Snapshot receive for protection domain {protection_domain_name} from remote site {remote_name} failed. {reason}",
+      "detailed_message": "",
+      "alert_title": "Protection domain {protection_domain_name} retrieval failed",
+      "acknowledged_time_stamp_in_usecs": 0,
+      "resolved_time_stamp_in_usecs": 0,
+      "resolved_by_username": "",
+      "user_defined": false,
+      "affected_entities": [
+        {
+          "entity_type": "remote_site",
+          "entity_type_display_name": null,
+          "entity_name": null,
+          "uuid": "ESX-2",
+          "id": "ESX-2"
+        },
+        {
+          "entity_type": "protection_domain",
+          "entity_type_display_name": null,
+          "entity_name": null,
+          "uuid": "AsyncDRTest",
+          "id": "AsyncDRTest"
+        }
+      ],
+      "context_types": [
+        "protection_domain_name",
+        "remote_name",
+        "timestamp_usecs",
+        "reason",
+        "operation_id",
+        "arithmos_id",
+        "ncc_version",
+        "nos_version",
+        "remote_site_uuid"
+      ],
+      "context_values": [
+        "AsyncDRTest",
+        "ESX-2",
+        "1500732678255011",
+        "Replicate RPC completed with error kInvalidValue. Remote detail: Replicate path request for invalid container Dahua-test-conftainer",
+        "5124934",
+        "AsyncDRTest",
+        "3.0.4-b0379d15",
+        "5.1.1",
+        "00051c18-644e-38c5-0000-00000000454a"
+      ],
+      "possible_causes": [],
+      "alert_details": null
+    },
+    {
+      "id": "1500731056232847:5:00051c16-6edc-18f0-0000-000000005179",
+      "alert_type_uuid": "A1127",
+      "check_id": "00051c16-6edc-18f0-0000-000000005179::130048",
+      "resolved": false,
+      "auto_resolved": false,
+      "acknowledged": false,
+      "service_vmid": "00051c16-6edc-18f0-0000-000000005179::5",
+      "node_uuid": "5",
+      "created_time_stamp_in_usecs": 1500731056232847,
+      "last_occurrence_time_stamp_in_usecs": 1500731056232847,
+      "cluster_uuid": "00051c16-6edc-18f0-0000-000000005179",
+      "severity": "kCritical",
+      "impact_types": [
+        "Availability"
+      ],
+      "classifications": [
+        "DR"
+      ],
+      "acknowledged_by_username": "",
+      "message": "Snapshot receive for protection domain {protection_domain_name} from remote site {remote_name} failed. {reason}",
+      "detailed_message": "",
+      "alert_title": "Protection domain {protection_domain_name} retrieval failed",
+      "acknowledged_time_stamp_in_usecs": 0,
+      "resolved_time_stamp_in_usecs": 0,
+      "resolved_by_username": "",
+      "user_defined": false,
+      "affected_entities": [
+        {
+          "entity_type": "remote_site",
+          "entity_type_display_name": null,
+          "entity_name": null,
+          "uuid": "AHV-1",
+          "id": "AHV-1"
+        },
+        {
+          "entity_type": "protection_domain",
+          "entity_type_display_name": null,
+          "entity_name": null,
+          "uuid": "JY-Test-SSR",
+          "id": "JY-Test-SSR"
+        }
+      ],
+      "context_types": [
+        "protection_domain_name",
+        "remote_name",
+        "timestamp_usecs",
+        "reason",
+        "operation_id",
+        "arithmos_id",
+        "ncc_version",
+        "nos_version",
+        "remote_site_uuid"
+      ],
+      "context_values": [
+        "JY-Test-SSR",
+        "AHV-1",
+        "1500731049094795",
+        "Replicate RPC completed with error kInvalidValue. Remote detail: Replicate path request for invalid container AHV-1",
+        "5124767",
+        "JY-Test-SSR",
+        "3.0.4-b0379d15",
+        "5.1.1",
+        "00053aa7-50e7-bda4-0000-0000000044dc"
+      ],
+      "possible_causes": [],
+      "alert_details": null
+    }
+  ]
+}
