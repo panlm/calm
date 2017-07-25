@@ -9,8 +9,7 @@ export PATH=$PATH:/usr/local/bin
 umask 0000
 timestamp=`date +%s`
 
-for i in $* ; do
-    cluster=$i
+for cluster in $* ; do
     path=`dirname $0`
     timefile=/var/tmp/$cluster-listalert.sh.timestamp
     outfile=/var/tmp/$cluster-listalert.sh.out.$timestamp
@@ -78,7 +77,7 @@ for i in $* ; do
         cat >$mailfile <<EOF
 From: "nutanix" <$mailfrom>
 To: "1121415" <$mailfrom>
-Subject: Nutanix Enterprise Alerts Mail in Cluster: $i
+Subject: Nutanix Enterprise Alerts Mail in Cluster: $cluster
 
 EOF
         cat $alertfile >>$mailfile
