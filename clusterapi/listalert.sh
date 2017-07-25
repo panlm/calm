@@ -20,11 +20,13 @@ for i in $* ; do
 
     #get start_time and end_time
     #if no timefile then period is the last hour
+    #and get last 100 alerts
     end_time=${timestamp}000000
     if [ -f $timefile ]; then
         start_time=`cat $timefile`
     else
         start_time=`echo $timestamp - 3600 |bc `000000
+        count=100
     fi
     
     #Optional Format with csvlook
@@ -38,8 +40,12 @@ for i in $* ; do
     string2="end_time_in_usecs="$end_time
     
     cat $apifile >$runfile
-    sed -i "/https/s/alerts\/'/alerts\/?$string1\&$string2'/" $runfile
     sed -i "/https/s/10\.132\.68\.45/$cluster/" $runfile
+    if [ -z $count ]; then
+        sed -i "/https/s/alerts\/'/alerts\/?$string1\&$string2'/" $runfile
+    else
+        sed -i "/https/s/alerts\/'/alerts\/?$string1\&$string2\&count=100'/" $runfile
+    fi
     chmod a+x $runfile
     
     #save all alert to tmpfile
@@ -63,6 +69,27 @@ for i in $* ; do
         cat $t2 >> $alertfile
     done
     rm -f $t1 $t2
+
+    #send alert mail
+    mailfrom=1121415@qq.com
+    mailto=1121415@qq.com
+    if [ -f $alertfile ]; then
+        mailfile=/tmp/mail.$$
+        cat >$mailfile <<EOF
+From: "nutanix" <$mailfrom>
+To: "1121415" <$mailfrom>
+Subject: Nutanix Enterprise Alerts Mail
+
+EOF
+        cat $alertfile >>$mailfile
+        echo '==========' >>$mailfile
+        cat $outfile >>$mailfile
+
+        curl --url 'smtps://smtp.qq.com:465' --ssl-reqd \
+            --mail-from "$mailfrom" --mail-rcpt "$mailto" \
+            --upload-file $mailfile --user '1121415@qq.com:aewqqdhtyljhbidf' --insecure 2>/dev/null
+    fi
+
     echo $end_time > $timefile
 done
     
