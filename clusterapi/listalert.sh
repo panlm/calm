@@ -78,7 +78,7 @@ for i in $* ; do
         cat >$mailfile <<EOF
 From: "nutanix" <$mailfrom>
 To: "1121415" <$mailfrom>
-Subject: Nutanix Enterprise Alerts Mail
+Subject: Nutanix Enterprise Alerts Mail in Cluster: $i
 
 EOF
         cat $alertfile >>$mailfile
